@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Unauthorized client</title>
+    <script>
+        (function(I,n,f,o,b,i,p){
+        I[b]=I[b]||function(){(I[b].q=I[b].q||[]).push(arguments)};
+        I[b].t=1*new Date();i=n.createElement(f);i.async=1;i.src=o;
+        p=n.getElementsByTagName(f)[0];p.parentNode.insertBefore(i,p)})
+        (window,document,'script','https://livechat.infobip.com/widget.js','liveChat');
+        
+        liveChat('init', 'b33ccce1-ffcc-4778-9a69-86f19fa9a2f7'); //add you widget ID
+    </script>
+
+    
+</head>
+<body>
+    <div>
+        <section class="form animated flipInX">
+            <h2 id="title"><%= test %></h2>
+            <form  action="/user-login" method="post">
+                <input placeholder="User" type="text" name="username"></input>
+                <input placeholder="Password" type="password" name="password"></input>
+                <input type="submit" value="Login">
+            </form> 
+            
+        </section>
+
+    </div>
+</body>
+</html>
